@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="Hotel.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Royal Hotel</h1>
+        <p>Best Luxury Hotel</p>
+    </header>
+
+    <section class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-box">
+            <h3>Single Room</h3>
+            <p>Price: ₹1500 / Night</p>
+        </div>
+        <div class="room-box">
+            <h3>Double Room</h3>
+            <p>Price: ₹2500 / Night</p>
+        </div>
+    </section>
+
+    <section class="booking">
+        <h2>Room Booking</h2>
+        <form onsubmit="return bookRoom()">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="date" id="date">
+            <select id="room">
+                <option value="">Select Room</option>
+                <option>Single Room</option>
+                <option>Double Room</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <script src="Hotel.js"></script>
+</body>
+</html>
